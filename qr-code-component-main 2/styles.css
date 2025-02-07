@@ -1,0 +1,74 @@
+:root {
+  /* colors */
+  --white-clr: hsl(0, 0%, 100%);
+  --slate-300-clr: hsl(212, 45%, 89%);
+  --slate-500-clr: hsl(216, 15%, 48%);
+  --slate-900-clr: hsl(218, 44%, 22%);
+
+  /* typography */
+
+  --outfit-font: "Outfit", serif;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--slate-300-clr);
+  font-family: var(--outfit-font);
+}
+
+/* typography */
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+p {
+  font-weight: lighter;
+  color: var(--slate-500-clr);
+  padding-bottom: 1.5em;
+  margin: 0 .2em;
+  /* padding: 0 .56em; */
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* qr code */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-clr);
+  max-width: 290px;
+  padding: 1em .25em;
+  border-radius: 15px;
+}
+
+img {
+  width: 255px;
+  border-radius: 15px;
+}
+
+.card-info {
+  /* padding: 0 1.2em; */
+  margin: 0 1.5em;
+  padding: 0 .5em;
+}
